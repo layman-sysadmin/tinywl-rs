@@ -2,7 +2,9 @@
 A port of wlroots tinywl to the wlr (safe bindings) Rust crate.
 
 ## Purpose
-The wlroots C library provides a reference implementation for a Wayland compositor: tinywl. The wlr crate (which is built from the wlr-sys crate), provides Rust programmers safe bindings to wlroots that integrate seamlessly into the Rust environment. This is a wonderful option for Rust programmers. However, wlr does not have a Rust translation for tinywl. The tinywl compositor helps programmers accelerate through the boilerplate of wlroots. It's a solid foundation used in many Wayland compositors, and fills a crucial role in learning wlroots. Without a Rust implementation to reference, building a compositor becomes unnecessarily difficult.
+The wlroots C library provides a reference implementation for a Wayland compositor: tinywl. The wlr crate (built from the wlr-sys crate), provides Rust programmers safe bindings to wlroots that integrate seamlessly into the Rust developing environment. This is a wonderful option for developers.
+
+However, wlr does not have a Rust translation for tinywl. The tinywl compositor helps programmers accelerate through the boilerplate of wlroots. It's a solid foundation used in many Wayland compositors, and fills a crucial role in learning wlroots. Without a Rust implementation to reference, building a compositor becomes unnecessarily difficult.
 
 To fill this gap, tinywl has been ported to Rust here. Rust programmers using the wlr crate can now reference a minimum viable implementation of a Wayland compositor!
 
