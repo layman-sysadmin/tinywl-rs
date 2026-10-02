@@ -1,0 +1,16 @@
+[package]
+name = "tinywl-rs"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+description = "tinywl, the wlroots reference compositor, ported to Rust on the wlr crate"
+license = "CC0-1.0"
+publish = false
+
+[[bin]]
+name = "tinywl"
+path = "src/tinywl.rs"
+
+[dependencies]
+# wlr's minor version tracks the wlroots minor it binds: 0.20.x binds wlroots 0.20.
+wlr = "0.20.37"
